@@ -3,7 +3,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: [process.env.FRONTEND_URL, "localhost:3000"],
   methods: ["GET", "POST", "PUT", "DELETE"],
 };
 
